@@ -8,17 +8,18 @@
 </head>
 <body>
     <center>
-        <h1>This is the Topic display.</h1>
-        <table border="3px">
+        <h1>This is the Topic display</h1>
+        <table border="2px">
             <tr> 
-                <th>Tname</th>
+                <th>TName</th>
             </tr>
-            {% for i in topics %}
+        {% for i in topic %}
             <tr>
-                <td>{{i.Tname}}</td>
+                
+                <td>{{i.TName}}</td>
 
             </tr>
-            {% endfor %}
+        {% endfor %}
 
         </table>
     </center>

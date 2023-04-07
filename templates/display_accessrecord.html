@@ -17,14 +17,13 @@
             <th>Anthor</th>
             <th>Date</th>
         </tr>
-    {% for p in accessrecord %} 
+    {% for k in accessrecord %}
         <tr>
-          
-          <td>{{p.Name}}</td>
-          <td>{{p.Author}}</td>
-          <td>{{p.Date}}</td>
+          <td>{{k.Name}}</td>
+          <td>{{k.Author}}</td>
+          <td>{{k.Date}}</td>
         </tr>
-            {% endfor %}
+    {% endfor %}
 
     </table>
     </center>

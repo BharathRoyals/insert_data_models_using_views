@@ -7,22 +7,22 @@
     <title>Document</title>
 </head>
 <body><center>
-    <h1>This is the Display webpages</h1>
+    <h1>They are in Webpages</h1>
     <table border="3px">
-        <tr> 
-            <th>Tname</th>
+        <tr>
+            <th>TName</th>
             <th>Name</th>
             <th>Email</th>
             <th>Url</th>
         </tr>
-    {% for wo in webpages %} 
-        <tr>
-          <td>{{wo.Tname}}</td>
-          <td>{{wo.Name}}</td>
-          <td>{{wo.Email}}</td>
-          <td>{{wo.Url}}</td>
-        </tr>
-            {% endfor %}
+    {% for p in webpages %}
+    <tr>
+        <td>{{p.TName}}</td>
+        <td>{{p.Name}}</td>
+        <td>{{p.Email}}</td>
+        <td>{{p.Url}}</td>
+        {% endfor %}
+    </tr>
 
     </table>
 </center>
